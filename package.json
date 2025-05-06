@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "docs": "jsdoc -c jsdoc.conf.json",
     "test:ui": "vitest --ui",
+    "test": "vitest",
     "test:watch": "vitest --watch"
   },
   "dependencies": {

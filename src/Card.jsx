@@ -15,13 +15,16 @@ function Card({ project, baseUrl }) {
 
   return (
     <div className="projectCard" key={project.id}>
-      <img src={baseUrl + project.cover.url} alt="" />
+      <img
+        src={baseUrl ? baseUrl + project.cover.url : project.cover.url}
+        alt=""
+      />
       <ul>
         {project.technologies.map((tech) => (
           <li key={tech.id}>{tech.name}</li>
         ))}
       </ul>
-      <h3>{project.name}</h3>
+      <h3>{project.title}</h3>
       <p>{project.description}</p>
     </div>
   );
